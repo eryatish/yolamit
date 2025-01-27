@@ -745,7 +745,7 @@
       const header = document.getElementById("fh5co-header");
 
       window.addEventListener("scroll", () => {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 5) {
           header.classList.add("scrolled");
         } else {
           header.classList.remove("scrolled");
@@ -825,7 +825,7 @@
             const headerOffset = 70; // Adjust this based on your header's height
             const elementPosition = targetElement.getBoundingClientRect().top;
             const offsetPosition =
-              elementPosition + window.pageYOffset - headerOffset - 650;
+              elementPosition + window.pageYOffset - headerOffset;
 
             window.scrollTo({
               top: elementPosition,

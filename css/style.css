@@ -1332,6 +1332,13 @@ ul.fh5co-social-icons li a {
 header.scrolled {
 	height: 70px;
 	background-position: top;
+	position: fixed;
+		/* Fixes the header at the top */
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		z-index: 1000;
 }
 
 header.scrolled .container {
