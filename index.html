@@ -421,7 +421,7 @@
         =========================== -->
     <section class="text-center section-padding contact-wrap" id="contact">
       <!-- To Top Button -->
-      <a href="index.html#top" class="up-btn"
+      <a  onclick="event.preventDefault(); window.scrollTo({top: 0,behavior: 'smooth'});" class="up-btn"
         ><i class="fa fa-chevron-up"></i
       ></a>
       <div class="container">
@@ -549,7 +549,7 @@
           <div class="col-md-12 text-center">
             <p>
               All Rights Reserved. &copy; 2025
-              <a href="http://www.yolamit.com">Yolamit</a>
+              <a href="https://www.yolamit.com">Yolamit</a>
             </p>
           </div>
         </div>
@@ -842,7 +842,7 @@
             });
         });
     </script>
-    <script>
+    <!-- <script>
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
@@ -863,6 +863,6 @@
         });
       });
 
-    </script>
+    </script> -->
   </body>
 </html>
