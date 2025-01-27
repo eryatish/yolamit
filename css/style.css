@@ -777,7 +777,7 @@ img.grayscale:hover {
 	display:block;
 	margin:0;
 	padding:0;
-	height:auto;
+	height:500px;
 }
 .overlay {
 	display:block;
@@ -1376,31 +1376,74 @@ header.scrolled ul.fh5co-social-icons {
 header.scrolled .scroll-container{
 	display: none;
 }
-
-.modal {
-	display: none;
+/* Basic Modal Styling */
+.modal-overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.7);
-	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: none;
 	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	z-index: 1000;
 }
 
 .modal-content {
-	background: #fff;
-	padding: 20px;
-	text-align: center;
-	width: 80%;
-	/* max-width: 500px; */
+	font-family: 'Raleway',serif;
+	background-color: #fff;
+		border-radius: 10px;
+		padding: 30px;
+		max-width: 800px;
+		width: 100%;
+		box-sizing: border-box;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		max-height: 80vh;
+		overflow-y: auto;
+}
+.modal-content h2,
+.modal-content h4 {
+	font-size: 20px;
 }
 
-.close {
-	position: absolute;
-	top: 10px;
-	right: 20px;
-	cursor: pointer;
-	font-size: 20px;
+#modal-img-container {
+	margin-top: 30px;
+	text-align: center;
+}
+
+#modal-img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+#modal-solution-key-features b {
+	font-weight: bold;
+	color: var(--primary-color);
+}
+
+#modal-project-overview,
+#modal-solution,
+#modal-solution-key-features,
+#modal-result {
+	margin-bottom: 20px;
+}
+
+.modal-footer {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.text-black {
+	color: #333 !important;
+}
+p.text-black{
+	font-weight: 300;
+}
+
+.no-scroll {
+	overflow: hidden;
 }

@@ -281,14 +281,42 @@
             <div class="img">
               <a
                 onclick="openModal(event)"
-                title="Project One - Lorem Ipsum"
-                data-title="Project One - Lorem Ipsum"
-                data-desc="Description"
+                title="Midas Consultants"
+                data-title="Midas Consultants"
+                data-industry="Interior Design & Architecture"
+                data-desc="A detailed description of the project."
                 data-link="https://www.midas-consultants.com"
-                data-img="img/portfolio/portfolio-01-large.jpg"
+                data-img="img/midas-consultants-full.png"
+                data-client="Midas Consultants"
+                data-project-type="Web Development"
+                data-project-date="January 2025"
+                data-project-overview="Midas Consultants approached us to create a modern,
+                 visually appealing website that would effectively showcase their portfolio,
+                  introduce their talented team, and highlight their upcoming projects. 
+                  As a leading interior design and architecture firm, they needed a site that matched their sophisticated brand and
+                   demonstrated their design capabilities in a user-friendly format."
+                   data-solution="Our team worked closely with Midas Consultants to understand their vision and needs. 
+                   We designed and developed a responsive website that is easy to navigate and beautifully showcases their work"
+                   data-solution-key-feature="<b>Portfolio Showcase</b>:
+                    <p class='text-black'>A visually striking gallery of completed projects with high-quality images, descriptions, and case studies, 
+                    providing potential clients with a clear understanding of Midas Consultants' style and expertise.</p>
+                    <b>Team Section</b>: <p class='text-black'>An interactive team page highlighting the firm’s architects and designers, 
+                      including their professional bios, expertise, and design philosophy. This section emphasizes the talented professionals behind
+                       Midas Consultants and builds trust with visitors.</p>
+                    <b>Upcoming Projects</b>: <p class='text-black'>A dedicated area to display upcoming projects and collaborations, giving visitors an 
+                      insight into the future direction of the company and keeping them engaged with fresh content.</p>
+                    <b>User-Friendly Interface</b>: <p class='text-black'>Designed to be intuitive and easy to navigate, the website allows users to explore
+                       Midas Consultants' work, learn about the team, and stay updated with new projects, all while maintaining an elegant 
+                       and clean design</p>"
+                       data-result="The website has helped Midas Consultants enhance their online presence, 
+                       effectively communicating their expertise in the interior design and architecture industry. 
+                       Since the website launch, they have seen an increase in inquiries from potential clients, as the site has made it easier for visitors 
+                       to explore their offerings and engage with the team.<br>
+                       We’re proud to have partnered with Midas Consultants to bring their vision to life online and look forward to 
+                       seeing their continued success in the industry."  
                 ><img
                   class="grayscale"
-                  src="img/portfolio/portfolio-01-thumbnail.jpg"
+                  src="img/portfolio/midas-consultants.jpeg"
                   alt="Portfolio Item"
               /></a>
             </div>
@@ -338,32 +366,12 @@
             <ul class="slides">
               <li>
                 <p>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                  sea takimata sanctus est Lorem ipsum dolor sit amet. <br />
-                  <small>- Pete Rock, A New Tomorrow</small>
-                </p>
-              </li>
-              <li>
-                <p>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                  sea takimata sanctus est Lorem ipsum dolor sit amet. <br />
-                  <small>- Michael Snowden, Creativeland CEO</small>
-                </p>
-              </li>
-              <li>
-                <p>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                  sea takimata sanctus est Lorem ipsum dolor sit amet. <br />
-                  <small>- Tom Davis, GreenWonder</small>
+                  Working with Yatish was an absolute pleasure! 
+                  The website he created for us is not only stunning but also incredibly functional. 
+                  He truly understood our vision and translated it into a modern, user-friendly design. 
+                  We’ve seen a significant increase in site traffic and engagement since the launch. 
+                  Highly recommended! <br />
+                  - Client: Midas Consultants
                 </p>
               </li>
             </ul>
@@ -381,21 +389,21 @@
     <section>
       <div class="container-fluid">
         <div class="row color-bg">
-          <div class="col-md-6 nopadding subscribe text-center">
-            <!-- <h1>
-              <i class="fa fa-paper-plane"></i
-              ><span>Subscribe our Newsletter</span>
-            </h1>
-            <form action="index.html#">
-              <input
-                type="text"
-                name=""
-                value=""
-                placeholder=""
-                required
-              />
-              <input type="submit" name="" value="Send" />
-            </form> -->
+          <div class="col-md-6  subscribe">
+          <h6>My ongoing projects</h6>
+          <div id="clientSlider">
+            <ul class="slides">
+              <li>
+                <p>
+                  Yatish took our idea and turned it into an online presence that exceeded our expectations. 
+                  His attention to detail and ability to grasp the intricacies of our business made him a great fit for our project. 
+                  The feedback from our users has been overwhelmingly positive. 
+                  Thank you for bringing our brand to life! <br />
+                  - Client: MIDAS - House of Design
+                </p>
+              </li>
+            </ul>
+          </div>
           </div>
           <div class="col-md-6 nopadding features-intro-img">
             <div
@@ -558,13 +566,34 @@
         MODAL SECTION
         =========================== -->
 
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <h3 id="modal-title"></h3>
-        <p id="modal-description"></p>
-      </div>
+        <!-- Modal Structure -->
+<div id="modal" class="modal-overlay">
+  <div class="modal-content">
+    <!-- <button class="close-btn" onclick="closeModal()">×</button> -->
+    
+    <h2 id="modal-title" class="text-center text-black"></h2>
+    <h4 id="modal-client" class="text-black" ></h4>
+    <p id="modal-industry" class="text-black" ></p>
+    <p id="modal-date" class="text-black" ></p>
+
+    <div id="modal-project-overview" class="text-black" ></div>
+    
+    <div id="modal-solution" class="text-black" ></div>
+
+    <div id="modal-solution-key-features" class="text-black" ></div>
+
+    <div id="modal-result" class="text-black" ></div>
+
+    <div id="modal-img-container">
+      <img id="modal-img" src="" alt="Project Image" />
     </div>
+    <div class="modal-footer">
+          <a id="modal-link" class="outline-btn btn-send" href="" target="_blank">Visit the Site</a>
+          <a class="outline-btn" style="background:rgb(214, 59, 59)" onclick="event.preventDefault();closeModal()">Close</a>
+        </div>
+  </div>
+</div>
+
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -759,32 +788,34 @@
 
     <script>
       // Modal functionality
-      function openModal(event) {
-        event.preventDefault();
-        const element = event.currentTarget;
+     function openModal(event) {
+      event.preventDefault();
+      const element = event.currentTarget;
 
-        document.getElementById("modal-title").textContent =
-          element.getAttribute("data-title");
-        document.getElementById(
-          "modal-description"
-        ).innerHTML = `<br><br><div class=row>
-          <div class="col-md-6">
-          <p>${element.getAttribute("data-desc")}</p>
-          </div>
-          <div class="col-md-4">
-          <img src=${element.getAttribute("data-img")} style="max-width:100%"">
-          </div>
-          <div class="col-md-12"><br><br>
-          <button class="btn btn-invert">
-            <a style="text:white" href=${element.getAttribute(
-              "data-link"
-            )}>Visit the site</a>
-            </button>
-          </div></div>`;
-        document.getElementById("modal").style.display = "flex";
-      }
+      // Set Modal Content
+      document.getElementById("modal-title").textContent = element.getAttribute("data-title");
+      document.getElementById("modal-client").textContent = `Client: ${element.getAttribute("data-client")}`;
+      document.getElementById("modal-industry").textContent = `Industry: ${element.getAttribute("data-industry")}`;
+      document.getElementById("modal-date").textContent = `Project Date: ${element.getAttribute("data-project-date")}`;
+
+      document.getElementById("modal-project-overview").innerHTML = `<h4>Project Overview</h4><p class="text-black">${element.getAttribute("data-project-overview")}</p>`;
+      document.getElementById("modal-solution").innerHTML = `<h4>Solution</h4><p class="text-black">${element.getAttribute("data-solution")}</p>`;
+      document.getElementById("modal-solution-key-features").innerHTML = `<h4>Key Features</h4>${element.getAttribute("data-solution-key-feature")}`;
+      document.getElementById("modal-result").innerHTML = `<h4>Results</h4><p class="text-black">${element.getAttribute("data-result")}</p>`;
+
+      document.getElementById("modal-link").setAttribute("href", element.getAttribute("data-link"));
+      document.getElementById("modal-img").src = element.getAttribute("data-img");
+
+      // Show Modal
+      document.getElementById("modal").style.display = "flex";
+
+      // Disable Body Scroll
+      document.body.classList.add("no-scroll");
+    }
+
 
       function closeModal() {
+        document.body.classList.remove("no-scroll");
         document.getElementById("modal").style.display = "none";
       }
 
@@ -834,6 +865,7 @@
           }
         });
       });
+
     </script>
   </body>
 </html>
