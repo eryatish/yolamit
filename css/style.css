@@ -1354,8 +1354,6 @@ header.scrolled .profile-thumb {
 	height: 40px;
 	margin: 0;
 	transform: translateY(0);
-	background-size: 50px !important;
-	background-position-x: center;
 }
 
 header.scrolled h1 {
